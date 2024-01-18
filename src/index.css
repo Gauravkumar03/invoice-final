@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #f3f2f5;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  position: relative;
+}
+
+.print {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+@media print {
+  body *:not(.print-container *) {
+    visibility: hidden;
+  }
+  .print-container,
+  .print-container * {
+    visibility: visible;
+  }
+  .print-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  .container-two .btn {
+    display: none;
+  }
+}
+
+.container {
+  width: 750px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 40px 30px 40px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-info input {
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: rgb(104, 104, 104);
+}
+.header-info select {
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: rgb(104, 104, 104);
+}
+
+.header input.company-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+
+.header-info-two {
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 40px;
+  background-color: transparent;
+  font-weight: 550;
+  width: 200px;
+  color: #555555;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.sub-heading {
+  font-weight: bold;
+  color: #3c3b3b;
+  font-size: 16px;
+}
+
+.sub-content {
+  font-size: 14px;
+  color: #555555;
+  border: none;
+  outline: none;
+  width: 120px;
+}
+.sub-content-date {
+  font-size: 14px;
+  color: #555555;
+  border: none;
+  outline: none;
+  width: 120px;
+}
+
+.date-picker {
+  border: none;
+  background: transparent;
+  color: #555555;
+  font-weight: 500;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+.custom-file-upload {
+  padding: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.select-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.select-wrapper select {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container-two {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: auto;
+  padding: 2%;
+}
+
+th {
+  background-color: rgb(88, 86, 86);
+  color: white;
+}
+
+th,
+td {
+  padding: 1%;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+td input {
+  padding: 1%;
+  margin: 1%;
+  color: gray;
+  text-align: center;
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.plus {
+  background-color: green;
+  width: 20px;
+  margin: 5px;
+  height: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.plus-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+.container-three{
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+}
+
+.col-one{
+  display: flex;
+  font-size: 14px;
+  gap: 120px;
+  padding: 5px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.three{
+background-color: rgb(208, 206, 202);
+font-size: 16px;
+padding-top: 15px;
+
+}
+
+.value{
+  font-weight: bold;
+}
+
+.amount{
+  width: 150px;
+}
